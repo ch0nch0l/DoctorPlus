@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".SignInActivity">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginBottom="16dp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_name"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txtLoginMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter e-mail"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColorHint="#fff" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_pass"
+        android:backgroundTint="@color/colorPrimaryText"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txtLoginPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Enter Password"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColorHint="#fff" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="10dp"
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryText"
+        android:elevation="4dp"
+        android:text="SIGN IN"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabLoginHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="bottom|end"
+        android:elevation="4dp"
+        android:src="@android:drawable/ic_menu_help" />
+
+
+
+</LinearLayout>
+

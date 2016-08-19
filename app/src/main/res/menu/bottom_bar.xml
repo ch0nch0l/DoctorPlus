@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/botBarDoc"
+        android:icon="@drawable/ic_menu_camera"
+        android:title="All Doctors" />
+    <item
+        android:id="@+id/botBarMed"
+        android:icon="@drawable/ic_menu_gallery"
+        android:title="Find Medicine" />
+    <item
+        android:id="@+id/botBarBlood"
+        android:icon="@drawable/ic_menu_slideshow"
+        android:title="Search Blood" />
+    <item
+        android:id="@+id/botBarAmb"
+        android:icon="@drawable/ic_menu_manage"
+        android:title="Emergency Ambulance" />
+
+
+</menu>

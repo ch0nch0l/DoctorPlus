@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="net.zeroit.vortexzero.doctorplus.SignUpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <EditText
+                android:id="@+id/txtFName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="#fff"
+                android:hint="First Name"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/txtLName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="#fff"
+                android:hint="Last Name"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/txtPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="#fff"
+                android:hint="Password"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/txtConPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="#fff"
+                android:hint="Confirm Password"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="#fff"
+                android:hint="E-mail Address"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/colorPrimary" />
+
+            <Spinner
+                android:id="@+id/spinnerUserType"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:background="#fff"
+                android:dropDownWidth="200dp"
+                android:padding="10dp"
+                android:textColorHint="@color/colorPrimary"></Spinner>
+
+            <Spinner
+                android:id="@+id/spinnerUserCountry"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:background="#fff"
+                android:dropDownWidth="200dp"
+                android:padding="10dp"
+                android:textColorHint="@color/colorPrimary"></Spinner>
+
+            <Spinner
+                android:id="@+id/spinnerUserCity"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:background="#fff"
+                android:dropDownWidth="200dp"
+                android:padding="10dp"
+                android:textColorHint="@color/colorPrimary"></Spinner>
+
+
+            <EditText
+                android:id="@+id/txtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="#fff"
+                android:hint="Full Address"
+                android:maxLines="2"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/colorPrimary" />
+
+
+            <EditText
+                android:id="@+id/txtZipCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="#fff"
+                android:hint="Zip Code"
+                android:maxLines="2"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/txtPhoneNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="#fff"
+                android:hint="Phone Number"
+                android:maxLines="2"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/txtBirthDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="#fff"
+                android:hint="Birth Date"
+                android:maxLines="2"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/colorPrimary" />
+
+
+            <Spinner
+                android:id="@+id/spinnerUserBloodGroup"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:background="#fff"
+                android:dropDownWidth="200dp"
+                android:padding="10dp"
+                android:textColorHint="@color/colorPrimary"></Spinner>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:weightSum="7">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="3"
+                    android:background="#fff"
+                    android:hint="Donate Blood.?"
+                    android:padding="10dp"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="4"
+                    android:background="#fff"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:textColorHint="#c3c3c3">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:checked="false"
+                        android:text="YES" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:checked="false"
+                        android:text="NO" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/colorAccent"
+                android:elevation="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="SIGN UP"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
