@@ -5,11 +5,14 @@
     android:background="#f1f5f8"
     tools:context=".fragments.DoctorFragment">
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycler_card_view"
+    <GridView
+        android:id="@+id/grid_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scrollbars="vertical"
-        android:clipToPadding="false"/>
+        android:numColumns="3"
+        android:horizontalSpacing="8dp"
+        android:verticalSpacing="8dp"
+        android:gravity="center"
+        android:stretchMode="columnWidth"/>
 
 </RelativeLayout>

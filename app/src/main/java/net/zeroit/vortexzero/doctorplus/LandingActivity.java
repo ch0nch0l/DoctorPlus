@@ -32,24 +32,21 @@ import net.zeroit.vortexzero.doctorplus.fragments.MedicineFragment;
 public class LandingActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    LinearLayout doctorView;
+    private LinearLayout doctorView;
+    private LinearLayout medicineView;
+    private LinearLayout hospitalView;
+    private LinearLayout bloodView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_landing);
 
+        initializeView();
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        doctorView = (LinearLayout) findViewById(R.id.view_doctor);
-        doctorView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), SelectionActivity.class);
-                startActivity(intent);
-            }
-        });
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -71,7 +68,54 @@ public class LandingActivity extends AppCompatActivity
     }
 
 
+    public void initializeView(){
+        doctorView = (LinearLayout) findViewById(R.id.view_doctor);
+        medicineView = (LinearLayout) findViewById(R.id.view_medicine);
+        hospitalView = (LinearLayout) findViewById(R.id.view_hospital);
+        bloodView = (LinearLayout) findViewById(R.id.view_blood);
 
+        doctorView.setOnClickListener(clickListener);
+        medicineView.setOnClickListener(clickListener);
+        hospitalView.setOnClickListener(clickListener);
+        bloodView.setOnClickListener(clickListener);
+
+    }
+
+    View.OnClickListener clickListener = (new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            int id = view.getId();
+            Intent intent;
+
+            switch (id){
+                case R.id.view_doctor:
+                    intent = new Intent(getApplicationContext(), SelectionActivity.class);
+                    intent.putExtra("LAYOUT", "Doctor");
+                    startActivity(intent);
+                    break;
+                case R.id.view_medicine:
+                    intent = new Intent(getApplicationContext(), SelectionActivity.class);
+                    intent.putExtra("LAYOUT", "Medicine");
+                    startActivity(intent);
+                    break;
+                case R.id.view_hospital:
+                    intent = new Intent(getApplicationContext(), SelectionActivity.class);
+                    intent.putExtra("LAYOUT", "Hospital");
+                    startActivity(intent);
+                    break;
+                case R.id.view_blood:
+                    intent = new Intent(getApplicationContext(), SelectionActivity.class);
+                    intent.putExtra("LAYOUT", "Blood");
+                    startActivity(intent);
+                    break;
+                default:
+                    break;
+
+            }
+
+
+        }
+    });
 
     @Override
     public void onBackPressed() {

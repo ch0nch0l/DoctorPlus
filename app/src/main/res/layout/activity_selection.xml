@@ -14,6 +14,7 @@
         android:weightSum="7">
 
         <ImageView
+            android:id="@+id/btn_back"
             android:layout_width="0dp"
             android:layout_height="30dp"
             android:layout_gravity="center_vertical"
@@ -22,6 +23,7 @@
             android:src="@drawable/go_back_white"></ImageView>
 
         <TextView
+            android:id="@+id/layout_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -34,6 +36,7 @@
             android:textStyle="bold" />
 
         <ImageView
+            android:id="@+id/btn_search"
             android:layout_width="0dp"
             android:layout_height="36dp"
             android:layout_gravity="center_vertical"
@@ -58,6 +61,7 @@
     </RelativeLayout>
 
     <LinearLayout
+        android:id="@+id/layout_bottom_bar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:orientation="horizontal"
@@ -68,6 +72,7 @@
         android:background="@color/colorPrimary">
 
         <ImageView
+            android:id="@+id/btn_bottom_doctor"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="40dp"
@@ -75,6 +80,7 @@
             android:src="@drawable/doctor"/>
 
         <ImageView
+            android:id="@+id/btn_bottom_medicine"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="40dp"
@@ -82,6 +88,7 @@
             android:src="@drawable/medicine"/>
 
         <ImageView
+            android:id="@+id/btn_bottom_hospital"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="40dp"
@@ -89,6 +96,7 @@
             android:src="@drawable/hospital"/>
 
         <ImageView
+            android:id="@+id/btn_bottom_blood"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="40dp"
